@@ -1,0 +1,17 @@
+.bottomnavigation {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .sideBar {
+    display: none;
+  }
+
+  .contentMain {
+    flex-direction: column;
+  }
+
+  .bottomnavigation {
+    display: block;
+  }
+}
