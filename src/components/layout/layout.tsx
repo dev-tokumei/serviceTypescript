@@ -11,6 +11,7 @@ import AssessmentOutlinedIcon from '@mui/icons-material/AssessmentOutlined';
 import WhatshotOutlinedIcon from '@mui/icons-material/WhatshotOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
+import { NavLink } from 'react-router-dom';
 import './layou.css';
 import React, { useState } from 'react';
 
@@ -39,7 +40,7 @@ export const Layout: React.FC<ILayout> = ({ children }) => {
             right: '0',
             bottom: '0',
             backgroundColor: '#1F2824',
-            overflow: 'auto',
+            overflowX: 'scroll',
           }}
           value={value}
           onChange={handleChange}
