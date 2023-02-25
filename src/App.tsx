@@ -1,10 +1,12 @@
 import React from 'react';
+import { Layout } from './components/layout/layout';
+import { Navbar } from './components/navbar/navbar';
 
 function App() {
   return (
-    <div>
-      hello
-    </div>
+    <Layout>
+      <h2>Hello</h2>
+    </Layout>
   );
 }
 
