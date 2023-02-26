@@ -9,6 +9,7 @@ import './auth.css';
 export const Auth: React.FC = () => {
   return (
     <>
+      <Link to='/home'>Войти</Link>
       <Typography
         variant='h5'
         sx={{ marginTop: '15px', marginLeft: '15px', fontWeight: 'bold' }}
@@ -50,10 +51,13 @@ export const Auth: React.FC = () => {
                 Отправить
               </Button>
             </FormControl>
-            <Typography fontSize={10} mt={4} sx={{ width: '210px' }}>
+            <Typography fontSize={10} mt={4} mb={2} sx={{ width: '210px' }}>
               При входе в систему Вы принимаете условssия Пользовательского
               соглашения
             </Typography>
+            <Link className='text-[#75FBBE]  hover:underline' to='/registr'>
+              Нет аккаунта?
+            </Link>
           </CardContent>
         </Card>
       </div>

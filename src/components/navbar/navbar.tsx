@@ -18,6 +18,7 @@ import './navbar.css';
 
 import React, { useState } from 'react';
 import { Box } from '@mui/system';
+import { Link } from 'react-router-dom';
 
 interface Inavbar {
   children?: React.ReactNode;
@@ -119,9 +120,11 @@ export const Navbar: React.FC<Inavbar> = ({ children }) => {
           <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
             My account
           </MenuItem>
-          <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
-            Logout
-          </MenuItem>
+          <Link to='/'>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              Выйти
+            </MenuItem>
+          </Link>
         </Menu>
       </div>
     </div>
