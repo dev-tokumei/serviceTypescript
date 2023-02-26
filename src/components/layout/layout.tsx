@@ -14,9 +14,7 @@ import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import { NavLink } from 'react-router-dom';
 import './layou.css';
 import React, { useState } from 'react';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-import Slider from 'react-slick';
+import { Navbar } from '../navbar/navbar';
 
 interface ILayout {
   children: React.ReactNode;
@@ -24,14 +22,6 @@ interface ILayout {
 
 export const Layout: React.FC<ILayout> = ({ children }) => {
   const [value, setValue] = useState<string>('recents');
-
-  let settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 10,
-    slidesToScroll: 10,
-  };
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -41,7 +31,10 @@ export const Layout: React.FC<ILayout> = ({ children }) => {
       <div className='sideBar'>
         <Sidebar />
       </div>
-      <main>{children}</main>
+      <main>
+        <Navbar />
+        {children}
+      </main>
       <div className='bottomnavigation'>
         <BottomNavigation
           sx={{
@@ -56,88 +49,86 @@ export const Layout: React.FC<ILayout> = ({ children }) => {
           value={value}
           onChange={handleChange}
         >
-          <Slider {...settings}>
-            <BottomNavigationAction
-              component={NavLink}
-              to='/todo'
-              sx={{ color: '#fff' }}
-              label='Задачи'
-              value='Задачи'
-              icon={<CheckCircleOutlineOutlinedIcon />}
-            />
-            <BottomNavigationAction
-              component={NavLink}
-              to='/order'
-              sx={{ color: '#fff' }}
-              label='Заказы'
-              value='Заказы'
-              icon={<MoveToInboxOutlinedIcon />}
-            />
-            <BottomNavigationAction
-              component={NavLink}
-              to='/cashbox'
-              sx={{ color: '#fff' }}
-              label='Платежы'
-              value='Платежы'
-              icon={<AttachMoneyIcon />}
-            />
-            <BottomNavigationAction
-              component={NavLink}
-              to='/users'
-              sx={{ color: '#fff' }}
-              label='Клиенты'
-              value='Клиенты'
-              icon={<PeopleOutlineOutlinedIcon />}
-            />
-            <BottomNavigationAction
-              component={NavLink}
-              to='/inventory'
-              sx={{ color: '#fff' }}
-              label='Склад'
-              value='Склад'
-              icon={<ViewCompactOutlinedIcon />}
-            />
-            <BottomNavigationAction
-              component={NavLink}
-              to='/market'
-              sx={{ color: '#fff' }}
-              label='Магазин'
-              value='Магазин'
-              icon={<ShoppingCartOutlinedIcon />}
-            />
-            <BottomNavigationAction
-              component={NavLink}
-              to='/report'
-              sx={{ color: '#fff' }}
-              label='Отчети'
-              value='Отчети'
-              icon={<AssessmentOutlinedIcon />}
-            />
-            <BottomNavigationAction
-              component={NavLink}
-              to='/tender'
-              sx={{ color: '#fff' }}
-              label='Объявление'
-              value='Объявление'
-              icon={<WhatshotOutlinedIcon />}
-            />
-            <BottomNavigationAction
-              component={NavLink}
-              to='/settings'
-              sx={{ color: '#fff' }}
-              label='Настройка'
-              value='Настройка'
-              icon={<SettingsOutlinedIcon />}
-            />
-            <BottomNavigationAction
-              component={NavLink}
-              to='/help'
-              sx={{ color: '#fff' }}
-              label='Справка'
-              value='Справка'
-              icon={<HelpOutlineOutlinedIcon />}
-            />
-          </Slider>
+          <BottomNavigationAction
+            component={NavLink}
+            to='/todo'
+            sx={{ color: '#fff' }}
+            label='Задачи'
+            value='Задачи'
+            icon={<CheckCircleOutlineOutlinedIcon />}
+          />
+          <BottomNavigationAction
+            component={NavLink}
+            to='/order'
+            sx={{ color: '#fff' }}
+            label='Заказы'
+            value='Заказы'
+            icon={<MoveToInboxOutlinedIcon />}
+          />
+          <BottomNavigationAction
+            component={NavLink}
+            to='/cashbox'
+            sx={{ color: '#fff' }}
+            label='Платежы'
+            value='Платежы'
+            icon={<AttachMoneyIcon />}
+          />
+          <BottomNavigationAction
+            component={NavLink}
+            to='/users'
+            sx={{ color: '#fff' }}
+            label='Клиенты'
+            value='Клиенты'
+            icon={<PeopleOutlineOutlinedIcon />}
+          />
+          <BottomNavigationAction
+            component={NavLink}
+            to='/inventory'
+            sx={{ color: '#fff' }}
+            label='Склад'
+            value='Склад'
+            icon={<ViewCompactOutlinedIcon />}
+          />
+          <BottomNavigationAction
+            component={NavLink}
+            to='/market'
+            sx={{ color: '#fff' }}
+            label='Магазин'
+            value='Магазин'
+            icon={<ShoppingCartOutlinedIcon />}
+          />
+          <BottomNavigationAction
+            component={NavLink}
+            to='/report'
+            sx={{ color: '#fff' }}
+            label='Отчети'
+            value='Отчети'
+            icon={<AssessmentOutlinedIcon />}
+          />
+          <BottomNavigationAction
+            component={NavLink}
+            to='/tender'
+            sx={{ color: '#fff' }}
+            label='Объявление'
+            value='Объявление'
+            icon={<WhatshotOutlinedIcon />}
+          />
+          <BottomNavigationAction
+            component={NavLink}
+            to='/settings'
+            sx={{ color: '#fff' }}
+            label='Настройка'
+            value='Настройка'
+            icon={<SettingsOutlinedIcon />}
+          />
+          <BottomNavigationAction
+            component={NavLink}
+            to='/help'
+            sx={{ color: '#fff' }}
+            label='Справка'
+            value='Справка'
+            icon={<HelpOutlineOutlinedIcon />}
+          />
         </BottomNavigation>
       </div>
     </div>

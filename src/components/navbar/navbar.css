@@ -1,0 +1,58 @@
+.css-twia2z-MuiPaper-root-MuiDialog-paper {
+  background-color: #232c28 !important;
+}
+
+.btnModal {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: rgb(117, 251, 200);
+  background-image: linear-gradient(
+    135deg,
+    rgb(117, 251, 200),
+    rgb(0, 190, 215)
+  );
+}
+
+.css-twia2z-MuiPaper-root-MuiDialog-paper {
+  box-shadow: none !important;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  background-color: #243630 !important;
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  background-color: #243630 !important;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  border: 1px solid #6bfbd0;
+  border-radius: 7px;
+}
+
+@media (max-width: 380px) {
+  .css-1na7fvx-MuiButtonBase-root-MuiButton-root {
+    padding: 12px 19px !important;
+  }
+
+  .css-ahj2mt-MuiTypography-root {
+    font-size: 14px !important;
+  }
+
+  .MuiDialogContent-root {
+    padding: 13px 8px !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .css-1na7fvx-MuiButtonBase-root-MuiButton-root {
+    padding: 8px 16px !important;
+  }
+
+  .css-ahj2mt-MuiTypography-root {
+    font-size: 13px !important;
+  }
+
+  .MuiDialogContent-root {
+    padding: 10px 6px !important;
+  }
+}
