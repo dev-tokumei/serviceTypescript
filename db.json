@@ -1,0 +1,12 @@
+{
+  "auth": [{ "name": "Faridun" }],
+  "todo": [{}],
+  "order": [{}],
+  "users": [{}],
+  "invertory": [{}],
+  "market": [{}],
+  "report": [{}],
+  "tender": [{}],
+  "settings": [{}],
+  "help": [{}]
+}

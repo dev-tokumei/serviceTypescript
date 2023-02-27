@@ -15,6 +15,9 @@ import Button from '@mui/material/Button';
 export const Sidebar: React.FC = () => {
   return (
     <div className='bg-[#1F2824] flex flex-col h-screen '>
+      <NavLink to='/'>
+        <img src='' alt='' />
+      </NavLink>
       <NavLink to='/todo'>
         <Tooltip title='Задачи' placement='right-end'>
           <Button sx={{ color: '#fff', padding: '20px' }}>
