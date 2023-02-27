@@ -5,6 +5,8 @@ import CardContent from '@mui/material/CardContent';
 import { Button, FormControl, TextField } from '@mui/material';
 import MailIcon from '@mui/icons-material/Mail';
 import './auth.css';
+import axios from 'axios';
+import { useEffect } from 'react';
 
 export const Auth: React.FC = () => {
   return (
@@ -16,7 +18,7 @@ export const Auth: React.FC = () => {
       >
         SmartClient
       </Typography>
-      <div className='flex items-center justify-center h-screen'>
+      <div className='flex items-center justify-center h-screen cardAuth '>
         <Card
           sx={{
             backgroundColor: 'transparent',

@@ -14,3 +14,9 @@
 .css-24rejj-MuiInputBase-input-MuiOutlinedInput-input {
   color: #fff !important;
 }
+
+@media (max-width: 500px) {
+  .cardAuth {
+    height: 70vh !important;
+  }
+}
