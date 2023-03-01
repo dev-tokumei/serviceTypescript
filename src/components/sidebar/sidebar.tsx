@@ -11,12 +11,15 @@ import WhatshotOutlinedIcon from '@mui/icons-material/WhatshotOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import Button from '@mui/material/Button';
+import logo from '../../assets/logo.png';
 
 export const Sidebar: React.FC = () => {
   return (
     <div className='bg-[#1F2824] flex flex-col h-screen '>
       <NavLink to='/'>
-        <img src='' alt='' />
+        <div className='w-[55px] h-[55px] bg-[#39413D] m-1 rounded-md'>
+          <img className='w-full h-full' src={logo} alt='logo' />
+        </div>
       </NavLink>
       <NavLink to='/todo'>
         <Tooltip title='Задачи' placement='right-end'>

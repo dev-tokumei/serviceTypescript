@@ -1,9 +1,7 @@
 import {
   Button,
   Dialog,
-  DialogActions,
   DialogContent,
-  DialogContentText,
   DialogTitle,
   IconButton,
   Menu,
@@ -26,6 +24,7 @@ interface Inavbar {
 
 export const Navbar: React.FC<Inavbar> = ({ children }) => {
   const [open, setOpen] = useState<boolean>(false);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -35,7 +34,6 @@ export const Navbar: React.FC<Inavbar> = ({ children }) => {
     setOpen(false);
   };
 
-  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const openBtn = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);

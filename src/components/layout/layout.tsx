@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Sidebar } from '../sidebar/sidebar';
-import { Navbar } from '../navbar/navbar';
 import BottomNavigation from '@mui/material/BottomNavigation/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction/BottomNavigationAction';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoneyOutlined';
@@ -15,6 +14,7 @@ import WhatshotOutlinedIcon from '@mui/icons-material/WhatshotOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import './layou.css';
+import { Navbar } from '../navbar/navbar';
 
 interface ILayout {
   children: React.ReactNode;
