@@ -31,7 +31,7 @@ export const theme = createTheme({
             },
           },
           '&:hover .MuiOutlinedInput-notchedOutline ': {
-            // borderColor: 'rgb(250, 232, 241)',
+            borderColor: '#69f0ae',
           },
         },
       },
