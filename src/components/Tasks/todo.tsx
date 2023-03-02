@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
-import { Box } from '@mui/material';
+import {
+  alpha,
+  Box,
+  InputAdornment,
+  InputBase,
+  TextField,
+} from '@mui/material';
 import { Layout } from '../../layout/layout';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
+import SearchIcon from '@mui/icons-material/Search';
 import './todo.css';
 
 const Todo: React.FC = () => {
@@ -16,7 +23,13 @@ const Todo: React.FC = () => {
   return (
     <Layout>
       <TabContext value={value}>
-        <Box sx={{ width: '100%' }}>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            width: '100%',
+          }}
+        >
           <TabList
             sx={{ color: '#fff' }}
             onChange={handleChange}
@@ -43,6 +56,23 @@ const Todo: React.FC = () => {
               value='4'
             />
           </TabList>
+          <TextField
+            sx={{
+              m: 1,
+              width: '25ch',
+              borderRadius: 20,
+              label: { color: 'white' },
+              color: '#fff',
+            }}
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position='start'>
+                  <SearchIcon style={{ color: '#fff' }} />
+                </InputAdornment>
+              ),
+            }}
+            variant='outlined'
+          />
         </Box>
         <TabPanel sx={{}} value='1'>
           Я исполнитель
