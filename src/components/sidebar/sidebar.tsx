@@ -15,9 +15,9 @@ import logo from '../../assets/logo.png';
 
 export const Sidebar: React.FC = () => {
   return (
-    <div className='bg-[#1F2824] flex w-[60px] flex-col h-screen border-r border-[#39413D]'>
+    <div className='bg-[#1F2824] flex w-[63px] flex-col h-screen border-r border-[#39413D]'>
       <NavLink to='/'>
-        <div className='w-[53px] h-[53px] bg-[#39413D] ml-1 mt-1 rounded-md '>
+        <div className='w-[53px] h-[53px] bg-[#39413D] ml-1 mt-1 mb-1 rounded-md '>
           <img className='w-full h-full' src={logo} alt='logo' />
         </div>
       </NavLink>
@@ -30,7 +30,7 @@ export const Sidebar: React.FC = () => {
       </NavLink>
       <NavLink to='/order'>
         <Tooltip title='Заказы' placement='right-end'>
-          <Button sx={{ color: '#fff', padding: '18px' }}>
+          <Button size='small' sx={{ color: '#fff', padding: '18px' }}>
             <MoveToInboxOutlinedIcon />
           </Button>
         </Tooltip>
