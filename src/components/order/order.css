@@ -1,0 +1,28 @@
+@media (max-width: 600px) {
+    .css-sgter1 {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+}
+
+.css-145v6pe-MuiButtonBase-root-MuiTabScrollButton-root.Mui-disabled {
+  display: none !important;
+}
+
+.css-167opla-MuiTabs-root .MuiTabs-scrollButtons {
+  display: none !important;
+}
+
+.css-1qq5tj-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #fff !important;
+}
+
+.css-69z67c-MuiTabs-scroller {
+  height: 48px !important;
+}
+
+.css-o98gj9-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 35px !important;
+  height: 40px;
+}

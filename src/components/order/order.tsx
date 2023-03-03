@@ -12,9 +12,9 @@ import {
 import SearchIcon from '@mui/icons-material/Search';
 import TabPanel from '@mui/lab/TabPanel';
 import TabList from '@mui/lab/TabList';
-import EditIcon from '@mui/icons-material/Edit';
 import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
 import ViewColumnOutlinedIcon from '@mui/icons-material/ViewColumnOutlined';
+import './order.css';
 const Order: React.FC = () => {
   const [value, setValue] = useState('1');
 

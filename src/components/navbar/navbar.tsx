@@ -17,7 +17,6 @@ import imgdialog from '../../assets/navbar/empty.jpg';
 import CloseIcon from '@mui/icons-material/Close';
 import './navbar.css';
 
-
 interface Inavbar {
   children?: React.ReactNode;
 }
