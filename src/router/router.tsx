@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
+import Order from '../components/order/order';
 import Todo from '../components/Tasks/todo';
 import { Auth } from '../pages/auth/auth';
 import { Registr } from '../pages/auth/registr/registr';
@@ -20,5 +21,9 @@ export const router = createBrowserRouter([
   {
     path: '/todo',
     element: <Todo />,
+  },
+  {
+    path: '/order',
+    element: <Order />,
   },
 ]);
