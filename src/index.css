@@ -33,6 +33,15 @@ main {
   width: 100%;
 }
 
-.css-1qq5tj-MuiInputBase-input-MuiOutlinedInput-input{
+.css-1qq5tj-MuiInputBase-input-MuiOutlinedInput-input {
   color: #fff !important;
+}
+
+.css-69z67c-MuiTabs-scroller {
+  height: 48px !important;
+}
+
+.css-o98gj9-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 35px !important;
+  height: 40px;
 }

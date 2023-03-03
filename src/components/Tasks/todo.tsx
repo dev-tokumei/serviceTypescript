@@ -27,10 +27,14 @@ const Todo: React.FC = () => {
           sx={{
             display: 'flex',
             justifyContent: 'space-between',
+            alignItems: 'center',
             width: '100%',
+            height: '52px',
           }}
         >
           <TabList
+            variant='scrollable'
+            scrollButtons='auto'
             sx={{ color: '#fff' }}
             onChange={handleChange}
             aria-label='lab API tabs example'
@@ -55,12 +59,22 @@ const Todo: React.FC = () => {
               label='Все'
               value='4'
             />
+            <Tab
+              sx={{ color: '#fff', textTransform: 'inherit' }}
+              label='Все'
+              value='5'
+            />
+            <Tab
+              sx={{ color: '#fff', textTransform: 'inherit' }}
+              label='Все'
+              value='6'
+            />
           </TabList>
           <TextField
+            placeholder='Поиск'
             sx={{
-              m: 1,
-              width: '25ch',
-              borderRadius: 20,
+              width: '960px',
+              borderRadius: 35,
               label: { color: 'white' },
               color: '#fff',
             }}
