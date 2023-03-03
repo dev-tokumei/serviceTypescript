@@ -1,9 +1,17 @@
-@media (max-width: 700px) {
-  .css-pcsl8w {
+@media (max-width: 600px) {
+  .css-nb2z2f {
+    width: 100% !important;
     display: flex !important;
     flex-direction: column-reverse !important;
-    flex-wrap: wrap !important;
   }
+}
+
+.css-145v6pe-MuiButtonBase-root-MuiTabScrollButton-root.Mui-disabled {
+  display: none !important;
+}
+
+.css-167opla-MuiTabs-root .MuiTabs-scrollButtons {
+  display: none !important;
 }
 
 .css-1qq5tj-MuiInputBase-input-MuiOutlinedInput-input {

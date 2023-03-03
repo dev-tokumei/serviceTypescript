@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
-import {
-  alpha,
-  Box,
-  InputAdornment,
-  TextField,
-} from '@mui/material';
+import { Box, InputAdornment, TextField } from '@mui/material';
 import { Layout } from '../../layout/layout';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
@@ -24,17 +19,16 @@ const Todo: React.FC = () => {
       <TabContext value={value}>
         <Box
           sx={{
+            width: '100%',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
-            width: '100%',
-            height: '52px',
           }}
         >
           <TabList
             variant='scrollable'
             scrollButtons='auto'
-            sx={{ color: '#fff' }}
+            sx={{ width: '100%', color: '#fff' }}
             onChange={handleChange}
             aria-label='lab API tabs example'
           >
@@ -58,16 +52,6 @@ const Todo: React.FC = () => {
               label='Все'
               value='4'
             />
-            <Tab
-              sx={{ color: '#fff', textTransform: 'inherit' }}
-              label='Все'
-              value='5'
-            />
-            <Tab
-              sx={{ color: '#fff', textTransform: 'inherit' }}
-              label='Все'
-              value='6'
-            />
           </TabList>
           <TextField
             placeholder='Поиск'
@@ -87,9 +71,7 @@ const Todo: React.FC = () => {
             variant='outlined'
           />
         </Box>
-        <TabPanel sx={{}} value='1'>
-          Я исполнитель
-        </TabPanel>
+        <TabPanel value='1'>Я исполнитель</TabPanel>
         <TabPanel value='2'>Выполненные</TabPanel>
         <TabPanel value='3'>Просроченные</TabPanel>
         <TabPanel value='4'>Все</TabPanel>
