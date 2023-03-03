@@ -3,7 +3,6 @@ import {
   alpha,
   Box,
   InputAdornment,
-  InputBase,
   TextField,
 } from '@mui/material';
 import { Layout } from '../../layout/layout';
@@ -73,7 +72,7 @@ const Todo: React.FC = () => {
           <TextField
             placeholder='Поиск'
             sx={{
-              width: '960px',
+              width: '100%',
               borderRadius: 35,
               label: { color: 'white' },
               color: '#fff',

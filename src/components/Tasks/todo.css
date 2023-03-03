@@ -1,6 +1,20 @@
 @media (max-width: 700px) {
-  .mobile {
-    display: flex;
-    flex-direction: column;
+  .css-pcsl8w {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    flex-wrap: wrap !important;
   }
+}
+
+.css-1qq5tj-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #fff !important;
+}
+
+.css-69z67c-MuiTabs-scroller {
+  height: 48px !important;
+}
+
+.css-o98gj9-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 35px !important;
+  height: 40px;
 }
