@@ -3,6 +3,7 @@ import { Layout } from '../../layout/layout';
 import { TabContext } from '@mui/lab';
 import {
   Box,
+  Drawer,
   IconButton,
   InputAdornment,
   Tab,
@@ -17,9 +18,19 @@ import ViewColumnOutlinedIcon from '@mui/icons-material/ViewColumnOutlined';
 import './order.css';
 const Order: React.FC = () => {
   const [value, setValue] = useState('1');
+  const [onOpen, setOnOpen] = useState(false);
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
+  };
+
+  const drawerOpen = () => {
+    setOnOpen(true);
+    console.log('test: true');
+  };
+  const drawerClose = () => {
+    setOnOpen(false);
+    console.log('test: false');
   };
   return (
     <Layout>
@@ -94,17 +105,18 @@ const Order: React.FC = () => {
               }}
               variant='outlined'
             />
-            <Tooltip title='fd'>
-              <IconButton style={{ color: '#fff' }}>
+            <Tooltip title='Фильтр'>
+              <IconButton onClick={drawerOpen} style={{ color: '#fff' }}>
                 <FilterListOutlinedIcon />
               </IconButton>
             </Tooltip>
-            <Tooltip title='Сортироват'>
+            <Tooltip title='Калонки'>
               <IconButton style={{ color: '#fff' }}>
                 <ViewColumnOutlinedIcon />
               </IconButton>
             </Tooltip>
           </Box>
+          <Drawer open={onOpen} onClose={drawerClose}></Drawer>
         </Box>
         <TabPanel value='1'>Я исполнитель</TabPanel>
         <TabPanel value='2'>Выполненные</TabPanel>
