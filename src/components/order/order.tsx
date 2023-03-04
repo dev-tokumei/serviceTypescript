@@ -70,33 +70,41 @@ const Order: React.FC = () => {
               value='7'
             />
           </TabList>
-          <TextField
-            placeholder='Поиск'
+          <Box
             sx={{
               width: '100%',
-              borderRadius: 35,
-              label: { color: 'white' },
-              color: '#fff',
+              display: 'flex',
+              justifyContent: 'space-between',
             }}
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position='start'>
-                  <SearchIcon style={{ color: '#fff' }} />
-                </InputAdornment>
-              ),
-            }}
-            variant='outlined'
-          />
-          <Tooltip title='fd'>
-            <IconButton style={{ color: '#fff' }}>
-              <FilterListOutlinedIcon />
-            </IconButton>
-          </Tooltip>
-          <Tooltip title='Сортироват'>
-            <IconButton style={{ color: '#fff' }}>
-              <ViewColumnOutlinedIcon />
-            </IconButton>
-          </Tooltip>
+          >
+            <TextField
+              placeholder='Поиск'
+              sx={{
+                width: '100%',
+                borderRadius: 35,
+                label: { color: 'white' },
+                color: '#fff',
+              }}
+              InputProps={{
+                startAdornment: (
+                  <InputAdornment position='start'>
+                    <SearchIcon style={{ color: '#fff' }} />
+                  </InputAdornment>
+                ),
+              }}
+              variant='outlined'
+            />
+            <Tooltip title='fd'>
+              <IconButton style={{ color: '#fff' }}>
+                <FilterListOutlinedIcon />
+              </IconButton>
+            </Tooltip>
+            <Tooltip title='Сортироват'>
+              <IconButton style={{ color: '#fff' }}>
+                <ViewColumnOutlinedIcon />
+              </IconButton>
+            </Tooltip>
+          </Box>
         </Box>
         <TabPanel value='1'>Я исполнитель</TabPanel>
         <TabPanel value='2'>Выполненные</TabPanel>
