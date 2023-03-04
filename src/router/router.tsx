@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
     element: <Order />,
   },
   {
-    path: '/cashback',
+    path: '/cashbox',
     element: <Cashback />,
   },
 ]);
