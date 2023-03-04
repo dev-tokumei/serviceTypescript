@@ -16,20 +16,25 @@ const Cashback = () => {
       >
         <Box
           sx={{
-            width: '444px',
+            width: '460px',
             height: '28px',
             display: 'flex',
-            flexWrap: 'wrap',
             justifyContent: 'space-between',
             alignItems: 'center',
             mb: 2,
           }}
         >
-          <Box sx={{ display: 'flex', width: '241px' }}>
-            <Typography style={{ fontSize: '24px', fontWeight: 'bold' }}>
+          <Box
+            sx={{
+              display: 'flex',
+              width: '231px',
+              justifyContent: 'space-between',
+            }}
+          >
+            <Typography style={{ fontSize: '23px', fontWeight: 'bold' }}>
               Баланс
             </Typography>
-            <Typography style={{ fontSize: '24px', fontWeight: 'bold' }}>
+            <Typography style={{ fontSize: '23px', fontWeight: 'bold' }}>
               1000,00 TJS
             </Typography>
           </Box>
