@@ -1,10 +1,73 @@
-import React from 'react'
-import { Layout } from '../../layout/layout'
+import React from 'react';
+import { Box, IconButton, Tooltip, Typography } from '@mui/material';
+import { Layout } from '../../layout/layout';
+import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
 
 const Cashback = () => {
   return (
-    <Layout>Cashback</Layout>
-  )
-}
+    <Layout>
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          height: '40px',
+        }}
+      >
+        <Box
+          sx={{
+            width: '444px',
+            height: '28px',
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            mb: 2,
+          }}
+        >
+          <Box sx={{ display: 'flex', width: '241px' }}>
+            <Typography style={{ fontSize: '24px', fontWeight: 'bold' }}>
+              Баланс
+            </Typography>
+            <Typography style={{ fontSize: '24px', fontWeight: 'bold' }}>
+              1000,00 TJS
+            </Typography>
+          </Box>
+          <Box>
+            <Typography sx={{ fontSize: '0.75rem' }}>Приход</Typography>
+            <Typography
+              sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-5px' }}
+            >
+              0,00 TJS
+            </Typography>
+          </Box>
+          <Box>
+            <Typography sx={{ fontSize: '12px' }}>Расход</Typography>
+            <Typography
+              sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-5px' }}
+            >
+              0,00 TJS
+            </Typography>
+          </Box>
+          <Box>
+            <Typography sx={{ fontSize: '12px' }}>Итог</Typography>
+            <Typography
+              sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-5px' }}
+            >
+              0,00 TJS
+            </Typography>
+          </Box>
+        </Box>
+        <Box>
+          <Tooltip title='Фильтр'>
+            <IconButton style={{ color: '#fff' }}>
+              <FilterListOutlinedIcon />
+            </IconButton>
+          </Tooltip>
+        </Box>
+      </Box>
+    </Layout>
+  );
+};
 
-export default Cashback
+export default Cashback;
