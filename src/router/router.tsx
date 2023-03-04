@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
+import Cashback from '../components/cashback/cashback';
 import Order from '../components/order/order';
 import Todo from '../components/Tasks/todo';
 import { Auth } from '../pages/auth/auth';
@@ -25,5 +26,9 @@ export const router = createBrowserRouter([
   {
     path: '/order',
     element: <Order />,
+  },
+  {
+    path: '/cashback',
+    element: <Cashback />,
   },
 ]);
