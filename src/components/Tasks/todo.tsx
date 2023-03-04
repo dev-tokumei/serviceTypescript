@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, InputAdornment, TextField } from '@mui/material';
+import { Box, InputAdornment, TextField, Typography } from '@mui/material';
 import { Layout } from '../../layout/layout';
 import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
@@ -7,7 +7,6 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import SearchIcon from '@mui/icons-material/Search';
 import './todo.css';
-import { Navbar } from '../navbar/navbar';
 
 const Todo: React.FC = () => {
   const [value, setValue] = useState('1');
@@ -71,6 +70,18 @@ const Todo: React.FC = () => {
             }}
             variant='outlined'
           />
+        </Box>
+        <Box
+          sx={{
+            borderBottom: 1,
+            paddingTop: 5,
+            paddingBottom: 2,
+            borderColor: '#39413D',
+          }}
+        >
+          <Typography style={{ color: '#5793E9', fontSize: '1.25rem' }}>
+            Просрочены
+          </Typography>
         </Box>
         <TabPanel value='1'>Я исполнитель</TabPanel>
         <TabPanel value='2'>Выполненные</TabPanel>
