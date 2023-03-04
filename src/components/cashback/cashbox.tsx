@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, IconButton, Tooltip, Typography } from '@mui/material';
 import { Layout } from '../../layout/layout';
 import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
+import './cashbox.css';
 
 const Cashback = () => {
   return (
@@ -11,7 +12,6 @@ const Cashback = () => {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          height: '40px',
         }}
       >
         <Box
@@ -38,29 +38,31 @@ const Cashback = () => {
               1000,00 TJS
             </Typography>
           </Box>
-          <Box>
-            <Typography sx={{ fontSize: '0.75rem' }}>Приход</Typography>
-            <Typography
-              sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-5px' }}
-            >
-              0,00 TJS
-            </Typography>
-          </Box>
-          <Box>
-            <Typography sx={{ fontSize: '12px' }}>Расход</Typography>
-            <Typography
-              sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-5px' }}
-            >
-              0,00 TJS
-            </Typography>
-          </Box>
-          <Box>
-            <Typography sx={{ fontSize: '12px' }}>Итог</Typography>
-            <Typography
-              sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-5px' }}
-            >
-              0,00 TJS
-            </Typography>
+          <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
+            <Box>
+              <Typography sx={{ fontSize: '0.75rem' }}>Приход</Typography>
+              <Typography
+                sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-5px' }}
+              >
+                0,00 TJS
+              </Typography>
+            </Box>
+            <Box>
+              <Typography sx={{ fontSize: '12px' }}>Расход</Typography>
+              <Typography
+                sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-5px' }}
+              >
+                0,00 TJS
+              </Typography>
+            </Box>
+            <Box>
+              <Typography sx={{ fontSize: '12px' }}>Итог</Typography>
+              <Typography
+                sx={{ fontSize: '1rem', fontWeight: 'bold', marginTop: '-5px' }}
+              >
+                0,00 TJS
+              </Typography>
+            </Box>
           </Box>
         </Box>
         <Box>

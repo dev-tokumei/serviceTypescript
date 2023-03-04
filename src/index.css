@@ -25,7 +25,11 @@ code {
 }
 
 .active {
-  color: #66d3aa;
+  color: #66d3aa !important;
+}
+
+.active button svg {
+  color: #66d3aa !important;
 }
 
 main {

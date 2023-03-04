@@ -1,0 +1,13 @@
+@media (max-width: 530px) {
+  .css-1ne061s {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .css-ojbxej {
+    width: 150px !important;
+  }
+}
