@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Cashback from '../components/cashback/cashback';
+import Cashback from '../components/cashback/cashbox';
 import Order from '../components/order/order';
 import Todo from '../components/Tasks/todo';
 import { Auth } from '../pages/auth/auth';
