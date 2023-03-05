@@ -47,7 +47,12 @@ export const Auth: React.FC = () => {
               <Button
                 startIcon={<MailIcon />}
                 className='btnModal'
-                sx={{ color: '#222', marginTop: '15px' }}
+                sx={{
+                  color: '#222',
+                  marginTop: '15px',
+                  textTransform: 'capitalize',
+                  fontWeight: 'bold',
+                }}
                 size='large'
               >
                 Отправить

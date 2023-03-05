@@ -112,7 +112,12 @@ export const Registr: React.FC = () => {
               fullWidth
               startIcon={<ExitToAppIcon />}
               className='btnModal'
-              sx={{ color: '#222', marginTop: '15px' }}
+              sx={{
+                color: '#222',
+                marginTop: '15px',
+                textTransform: 'capitalize',
+                fontWeight: 'bold',
+              }}
               size='large'
             >
               Начнем
