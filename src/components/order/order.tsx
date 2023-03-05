@@ -3,18 +3,21 @@ import { Layout } from '../../layout/layout';
 import { TabContext } from '@mui/lab';
 import {
   Box,
+  Button,
   Drawer,
   IconButton,
   InputAdornment,
   Tab,
   TextField,
   Tooltip,
+  Typography,
 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import TabPanel from '@mui/lab/TabPanel';
 import TabList from '@mui/lab/TabList';
 import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
 import ViewColumnOutlinedIcon from '@mui/icons-material/ViewColumnOutlined';
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import './order.css';
 const Order: React.FC = () => {
   const [value, setValue] = useState('1');
@@ -116,7 +119,59 @@ const Order: React.FC = () => {
               </IconButton>
             </Tooltip>
           </Box>
-          <Drawer open={onOpen} onClose={drawerClose}></Drawer>
+          <Drawer open={onOpen} onClose={drawerClose}>
+            <Box
+              sx={{
+                width: '400px',
+                height: '100%',
+                display: 'grid',
+                flexDirection: 'column',
+                alignItems: 'center',
+                padding: 3,
+                background: '#45544F',
+                overflow: 'auto',
+              }}
+            >
+              <Box
+                sx={{
+                  width: '100%',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  pb: 2,
+                }}
+              >
+                <Typography variant='h5' sx={{ color: '#fff' }}>
+                  Фильтр
+                </Typography>
+                <Tooltip title='Закрить'>
+                  <IconButton onClick={drawerClose} style={{ color: '#fff' }}>
+                    <CloseOutlinedIcon />
+                  </IconButton>
+                </Tooltip>
+              </Box>
+              <TextField fullWidth />
+              <TextField fullWidth />
+              <TextField fullWidth />
+              <TextField fullWidth />
+              <TextField fullWidth />
+              <TextField fullWidth />
+              <TextField fullWidth />
+              <TextField fullWidth />
+              <Button
+                size='large'
+                fullWidth
+                className='btnmodal bg-gradient-to-r from-teal-300 to-teal-500 font-bold'
+                sx={{
+                  textTransform: 'capitalize',
+                  color: 'black',
+                  borderRadius: 2,
+                }}
+              >
+                Обновить
+              </Button>
+            </Box>
+          </Drawer>
         </Box>
         <TabPanel value='1'>Я исполнитель</TabPanel>
         <TabPanel value='2'>Выполненные</TabPanel>
