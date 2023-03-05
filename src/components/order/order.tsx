@@ -119,10 +119,10 @@ const Order: React.FC = () => {
               </IconButton>
             </Tooltip>
           </Box>
-          <Drawer open={onOpen} onClose={drawerClose}>
+          <Drawer anchor='right' open={onOpen} onClose={drawerClose}>
             <Box
               sx={{
-                width: '400px',
+                width: '360px',
                 height: '100%',
                 display: 'grid',
                 flexDirection: 'column',
@@ -141,7 +141,10 @@ const Order: React.FC = () => {
                   pb: 2,
                 }}
               >
-                <Typography variant='h5' sx={{ color: '#fff' }}>
+                <Typography
+                  variant='h6'
+                  sx={{ color: '#fff', fontWeight: 'bold' }}
+                >
                   Фильтр
                 </Typography>
                 <Tooltip title='Закрить'>
@@ -165,7 +168,7 @@ const Order: React.FC = () => {
                 sx={{
                   textTransform: 'capitalize',
                   color: 'black',
-                  borderRadius: 2,
+                  borderRadius: 3,
                 }}
               >
                 Обновить
