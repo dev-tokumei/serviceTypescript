@@ -1,16 +1,3 @@
-.css-24rejj-MuiInputBase-input-MuiOutlinedInput-input::-webkit-input-placeholder {
-  color: red !important;
-}
-.css-24rejj-MuiInputBase-input-MuiOutlinedInput-input:-moz-placeholder {
-  color: red !important;
-}
-.css-24rejj-MuiInputBase-input-MuiOutlinedInput-input::-moz-placeholder {
-  color: red !important;
-}
-.css-24rejj-MuiInputBase-input-MuiOutlinedInput-input:-ms-input-placeholder {
-  color: red !important;
-}
-
 .css-24rejj-MuiInputBase-input-MuiOutlinedInput-input {
   color: #fff !important;
 }
