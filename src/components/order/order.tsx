@@ -5,11 +5,15 @@ import {
   Autocomplete,
   Box,
   Button,
+  Checkbox,
   Drawer,
   FormControl,
+  FormControlLabel,
   FormGroup,
   IconButton,
   InputAdornment,
+  Menu,
+  MenuItem,
   Tab,
   TextField,
   Tooltip,
@@ -26,9 +30,18 @@ const Order: React.FC = () => {
   const [value, setValue] = useState('1');
   const [onOpen, setOnOpen] = useState(false);
   const options = [{ label: 'jpwjrpfj' }];
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
+  };
+
+  const openBtn = Boolean(anchorEl);
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleCloseBtn = () => {
+    setAnchorEl(null);
   };
 
   const drawerOpen = () => {
@@ -118,7 +131,7 @@ const Order: React.FC = () => {
               </IconButton>
             </Tooltip>
             <Tooltip title='Калонки'>
-              <IconButton style={{ color: '#fff' }}>
+              <IconButton onClick={handleClick} style={{ color: '#fff' }}>
                 <ViewColumnOutlinedIcon />
               </IconButton>
             </Tooltip>
@@ -233,6 +246,146 @@ const Order: React.FC = () => {
               </Button>
             </Box>
           </Drawer>
+          <Menu
+            PaperProps={{ sx: { width: '230px' } }}
+            aria-labelledby='demo-positioned-button'
+            anchorEl={anchorEl}
+            open={openBtn}
+            onClose={handleCloseBtn}
+            anchorOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            transformOrigin={{
+              vertical: 'top',
+              horizontal: 'left',
+            }}
+            sx={{ width: '300px' }}
+          >
+            <MenuItem>
+              <Typography sx={{ color: '#fff' }}>Колонки</Typography>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Обновлен'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Статус'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Срок'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Клиент'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Менеджер'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Исполнитель'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Итого, TJS'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Причина обращения'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Внешний выд'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Вид устройство'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='IMEI/SN'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Бренд'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Модель'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Комплектация'
+                />
+              </FormGroup>
+            </MenuItem>
+            <MenuItem sx={{ color: '#fff' }} onClick={handleCloseBtn}>
+              <FormGroup>
+                <FormControlLabel
+                  control={<Checkbox size='small' sx={{ color: '#fff' }} />}
+                  label='Пароль'
+                />
+              </FormGroup>
+            </MenuItem>
+          </Menu>
         </Box>
         <TabPanel value='1'>Все</TabPanel>
         <TabPanel value='2'>Активные</TabPanel>

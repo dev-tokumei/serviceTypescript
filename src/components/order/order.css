@@ -46,3 +46,7 @@
 .css-7ce1uu-MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input {
   color: #fff !important;
 }
+
+.css-9fgr2u-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  background: transparent !important;
+}
