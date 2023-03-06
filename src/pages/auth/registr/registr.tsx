@@ -2,14 +2,10 @@ import { Link } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import {
-  Autocomplete,
-  Button,
-  FormControl,
-  TextField,
-} from '@mui/material';
+import { Autocomplete, Button, FormControl, TextField } from '@mui/material';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import FormGroup from '@mui/material/FormGroup';
+import './registr.css';
 
 export const Registr: React.FC = () => {
   const options = [
@@ -21,6 +17,7 @@ export const Registr: React.FC = () => {
       <Link to='/'>
         <Typography
           variant='h5'
+          className='mobile'
           sx={{
             marginTop: '15px',
             marginLeft: '15px',

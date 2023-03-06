@@ -1,0 +1,11 @@
+@media (max-width: 1024px) {
+  .mobile {
+    margin-bottom: 50px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .mobile {
+    margin-bottom: 70px !important;
+  }
+}
