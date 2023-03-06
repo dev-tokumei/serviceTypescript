@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Cashback from '../components/cashback/cashbox';
+import Inventory from '../components/inventory/inventory';
 import Order from '../components/order/order';
 import Todo from '../components/Tasks/todo';
 import Users from '../components/users/users';
@@ -35,5 +36,9 @@ export const router = createBrowserRouter([
   {
     path: '/clients',
     element: <Users />,
+  },
+  {
+    path: '/inventory',
+    element: <Inventory />,
   },
 ]);
