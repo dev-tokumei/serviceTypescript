@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom';
 import Cashback from '../components/cashback/cashbox';
 import Order from '../components/order/order';
 import Todo from '../components/Tasks/todo';
+import Users from '../components/users/users';
 import { Auth } from '../pages/auth/auth';
 import { Registr } from '../pages/auth/registr/registr';
 import { Home } from '../pages/home/home';
@@ -30,5 +31,9 @@ export const router = createBrowserRouter([
   {
     path: '/cashbox',
     element: <Cashback />,
+  },
+  {
+    path: '/clients',
+    element: <Users />,
   },
 ]);

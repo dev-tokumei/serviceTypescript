@@ -42,7 +42,7 @@ export const Sidebar: React.FC = () => {
           </Button>
         </Tooltip>
       </NavLink>
-      <NavLink to='/users'>
+      <NavLink to='/clients'>
         <Tooltip title='Клиенты' placement='right-end'>
           <Button sx={{ color: '#fff', padding: '18px' }}>
             <PeopleOutlineOutlinedIcon />
