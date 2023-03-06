@@ -141,7 +141,11 @@ export const Registr: React.FC = () => {
                   sx={{ pt: 3 }}
                   options={options}
                   renderInput={(params) => (
-                    <TextField {...params} label='Тип бизнеса' sx={{}} />
+                    <TextField
+                      sx={{ label: { color: '#fff' } }}
+                      {...params}
+                      label='Тип бизнеса'
+                    />
                   )}
                 />
               </FormControl>

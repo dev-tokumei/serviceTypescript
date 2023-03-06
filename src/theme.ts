@@ -43,6 +43,7 @@ export const theme = createTheme({
           color: '#fff',
           border: `2px solid #75FBC8`,
           marginTop: `5px`,
+          marginBottom: `7px`,
         },
         option: {
           '&[aria-selected="true"]': {
