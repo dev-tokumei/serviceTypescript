@@ -26,3 +26,7 @@
   border-radius: 35px !important;
   height: 40px;
 }
+
+.css-qzbt6i-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator {
+  color: #fff !important;
+}

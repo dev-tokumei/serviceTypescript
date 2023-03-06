@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import { Layout } from '../../layout/layout';
 import { TabContext } from '@mui/lab';
 import {
+  Autocomplete,
   Box,
   Button,
   Drawer,
+  FormControl,
+  FormGroup,
   IconButton,
   InputAdornment,
   Tab,
@@ -22,6 +25,7 @@ import './order.css';
 const Order: React.FC = () => {
   const [value, setValue] = useState('1');
   const [onOpen, setOnOpen] = useState(false);
+  const options = [{ label: 'jpwjrpfj' }];
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -153,14 +157,87 @@ const Order: React.FC = () => {
                   </IconButton>
                 </Tooltip>
               </Box>
-              <TextField fullWidth />
-              <TextField fullWidth />
-              <TextField fullWidth />
-              <TextField fullWidth />
-              <TextField fullWidth />
-              <TextField fullWidth />
-              <TextField fullWidth />
-              <TextField fullWidth />
+              <FormGroup>
+                <FormControl>
+                  <Autocomplete
+                    sx={{ pt: 3 }}
+                    options={options}
+                    renderInput={(params) => (
+                      <TextField
+                        sx={{ label: { color: '#fff' } }}
+                        {...params}
+                        label='Тип бизнеса'
+                      />
+                    )}
+                  />
+                  <Autocomplete
+                    sx={{ pt: 3 }}
+                    options={options}
+                    renderInput={(params) => (
+                      <TextField
+                        sx={{ label: { color: '#fff' } }}
+                        {...params}
+                        label='Тип бизнеса'
+                      />
+                    )}
+                  />
+                  <Autocomplete
+                    sx={{ pt: 3 }}
+                    options={options}
+                    renderInput={(params) => (
+                      <TextField
+                        sx={{ label: { color: '#fff' } }}
+                        {...params}
+                        label='Тип бизнеса'
+                      />
+                    )}
+                  />
+                  <Autocomplete
+                    sx={{ pt: 3 }}
+                    options={options}
+                    renderInput={(params) => (
+                      <TextField
+                        sx={{ label: { color: '#fff' } }}
+                        {...params}
+                        label='Тип бизнеса'
+                      />
+                    )}
+                  />
+                  <Autocomplete
+                    sx={{ pt: 3 }}
+                    options={options}
+                    renderInput={(params) => (
+                      <TextField
+                        sx={{ label: { color: '#fff' } }}
+                        {...params}
+                        label='Тип бизнеса'
+                      />
+                    )}
+                  />
+                  <Autocomplete
+                    sx={{ pt: 3 }}
+                    options={options}
+                    renderInput={(params) => (
+                      <TextField
+                        sx={{ label: { color: '#fff' } }}
+                        {...params}
+                        label='Тип бизнеса'
+                      />
+                    )}
+                  />
+                  <Autocomplete
+                    sx={{ pt: 3 }}
+                    options={options}
+                    renderInput={(params) => (
+                      <TextField
+                        sx={{ label: { color: '#fff' } }}
+                        {...params}
+                        label='Тип бизнеса'
+                      />
+                    )}
+                  />
+                </FormControl>
+              </FormGroup>
               <Button
                 size='large'
                 fullWidth
