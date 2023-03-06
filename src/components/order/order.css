@@ -30,3 +30,19 @@
 .css-qzbt6i-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-popupIndicator {
   color: #fff !important;
 }
+
+.css-1tsmc4n-MuiAutocomplete-root
+  .MuiOutlinedInput-root
+  .MuiAutocomplete-input {
+  color: #fff !important;
+}
+
+.css-1x6yb7n-MuiAutocomplete-root
+  .MuiOutlinedInput-root
+  .MuiAutocomplete-input {
+  color: #fff !important;
+}
+
+.css-7ce1uu-MuiAutocomplete-root .MuiOutlinedInput-root .MuiAutocomplete-input {
+  color: #fff !important;
+}

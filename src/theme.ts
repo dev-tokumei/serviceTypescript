@@ -53,7 +53,7 @@ export const theme = createTheme({
           '&:hover': {
             // backgroundColor: '#9c27b0',
           },
-          // backgroundColor: 'red',
+          color: '#fff',
         },
       },
     },

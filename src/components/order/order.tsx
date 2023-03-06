@@ -75,17 +75,17 @@ const Order: React.FC = () => {
             <Tab
               sx={{ color: '#fff', textTransform: 'inherit' }}
               label='Готовые 🙂'
-              value='5'
+              value='4'
             />
             <Tab
               sx={{ color: '#fff', textTransform: 'inherit' }}
               label='Ждут запчасти 📦'
-              value='6'
+              value='5'
             />
             <Tab
               sx={{ color: '#fff', textTransform: 'inherit' }}
               label='Согласование ⏳'
-              value='7'
+              value='6'
             />
           </TabList>
           <Box
@@ -129,7 +129,6 @@ const Order: React.FC = () => {
                 width: '360px',
                 height: '100%',
                 display: 'grid',
-                flexDirection: 'column',
                 alignItems: 'center',
                 padding: 3,
                 background: '#45544F',
@@ -142,7 +141,6 @@ const Order: React.FC = () => {
                   display: 'flex',
                   justifyContent: 'space-between',
                   alignItems: 'center',
-                  pb: 2,
                 }}
               >
                 <Typography
@@ -160,79 +158,62 @@ const Order: React.FC = () => {
               <FormGroup>
                 <FormControl>
                   <Autocomplete
-                    sx={{ pt: 3 }}
+                    disableClearable
+                    sx={{ color: '#fff', label: { color: '#fff' } }}
                     options={options}
                     renderInput={(params) => (
                       <TextField
-                        sx={{ label: { color: '#fff' } }}
+                        sx={{ label: { color: '#fff' }, color: ' #fff' }}
                         {...params}
-                        label='Тип бизнеса'
+                        label='Cтатусы'
                       />
                     )}
                   />
                   <Autocomplete
+                    disableClearable
                     sx={{ pt: 3 }}
                     options={options}
                     renderInput={(params) => (
                       <TextField
-                        sx={{ label: { color: '#fff' } }}
+                        sx={{ label: { color: '#fff' }, color: ' #fff' }}
                         {...params}
-                        label='Тип бизнеса'
+                        label='Менеджеры'
                       />
                     )}
                   />
                   <Autocomplete
+                    disableClearable
                     sx={{ pt: 3 }}
                     options={options}
                     renderInput={(params) => (
                       <TextField
-                        sx={{ label: { color: '#fff' } }}
+                        sx={{ label: { color: '#fff' }, color: ' #fff' }}
                         {...params}
-                        label='Тип бизнеса'
+                        label='Исполнители'
                       />
                     )}
                   />
                   <Autocomplete
+                    disableClearable
                     sx={{ pt: 3 }}
                     options={options}
                     renderInput={(params) => (
                       <TextField
-                        sx={{ label: { color: '#fff' } }}
+                        sx={{ label: { color: '#fff' }, color: ' #fff' }}
                         {...params}
-                        label='Тип бизнеса'
+                        label='Создан '
                       />
                     )}
                   />
                   <Autocomplete
+                    disableClearable
                     sx={{ pt: 3 }}
                     options={options}
                     renderInput={(params) => (
                       <TextField
-                        sx={{ label: { color: '#fff' } }}
+                        sx={{ label: { color: '#fff' }, color: ' #fff' }}
                         {...params}
-                        label='Тип бизнеса'
-                      />
-                    )}
-                  />
-                  <Autocomplete
-                    sx={{ pt: 3 }}
-                    options={options}
-                    renderInput={(params) => (
-                      <TextField
-                        sx={{ label: { color: '#fff' } }}
-                        {...params}
-                        label='Тип бизнеса'
-                      />
-                    )}
-                  />
-                  <Autocomplete
-                    sx={{ pt: 3 }}
-                    options={options}
-                    renderInput={(params) => (
-                      <TextField
-                        sx={{ label: { color: '#fff' } }}
-                        {...params}
-                        label='Тип бизнеса'
+                        label='Закрыть'
                       />
                     )}
                   />
@@ -253,10 +234,12 @@ const Order: React.FC = () => {
             </Box>
           </Drawer>
         </Box>
-        <TabPanel value='1'>Я исполнитель</TabPanel>
-        <TabPanel value='2'>Выполненные</TabPanel>
-        <TabPanel value='3'>Просроченные</TabPanel>
-        <TabPanel value='4'>Все</TabPanel>
+        <TabPanel value='1'>Все</TabPanel>
+        <TabPanel value='2'>Активные</TabPanel>
+        <TabPanel value='3'>В работе</TabPanel>
+        <TabPanel value='4'>Готовые</TabPanel>
+        <TabPanel value='5'>Ждут запчасти</TabPanel>
+        <TabPanel value='6'>Согласование</TabPanel>
       </TabContext>
     </Layout>
   );
