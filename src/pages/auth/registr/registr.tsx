@@ -2,11 +2,20 @@ import { Link } from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { Button, FormControl, TextField } from '@mui/material';
+import {
+  Autocomplete,
+  Button,
+  FormControl,
+  TextField,
+} from '@mui/material';
 import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 import FormGroup from '@mui/material/FormGroup';
 
 export const Registr: React.FC = () => {
+  const options = [
+    { label: 'The Godfather', color: 'red' },
+    { label: 'Pulp Fiction', color: 'green' },
+  ];
   return (
     <>
       <Link to='/'>
@@ -106,6 +115,17 @@ export const Registr: React.FC = () => {
               <span className='text-[#BDC0BF] text-[13px] '>
                 В международном формате, например, +992 502 ...
               </span>
+            </FormGroup>
+            <FormGroup>
+              <FormControl>
+                <Autocomplete
+                  sx={{ pt: 3 }}
+                  options={options}
+                  renderInput={(params) => (
+                    <TextField {...params} label='Тип бизнеса' sx={{}} />
+                  )}
+                />
+              </FormControl>
             </FormGroup>
 
             <Button
