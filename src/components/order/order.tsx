@@ -29,7 +29,7 @@ import './order.css';
 const Order: React.FC = () => {
   const [value, setValue] = useState('1');
   const [onOpen, setOnOpen] = useState(false);
-  const options = [{ label: 'jpwjrpfj' }];
+  const options = [{ label: 'Killer' }];
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
