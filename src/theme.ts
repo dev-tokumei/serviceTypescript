@@ -36,5 +36,25 @@ export const theme = createTheme({
         },
       },
     },
+    MuiAutocomplete: {
+      styleOverrides: {
+        paper: {
+          background: '#45544F',
+          color: '#fff',
+          border: `2px solid #75FBC8`,
+          marginTop: `5px`,
+        },
+        option: {
+          '&[aria-selected="true"]': {
+            // backgroundColor: '#e3abed',
+          },
+
+          '&:hover': {
+            // backgroundColor: '#9c27b0',
+          },
+          // backgroundColor: 'red',
+        },
+      },
+    },
   },
 });
