@@ -49,9 +49,10 @@ export const Auth: React.FC = () => {
                 className='btnModal'
                 sx={{
                   color: '#222',
-                  marginTop: '15px',
+                  marginTop: '25px',
                   textTransform: 'capitalize',
                   fontWeight: 'bold',
+                  borderRadius: 2,
                 }}
                 size='large'
               >

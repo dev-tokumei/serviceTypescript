@@ -16,7 +16,7 @@ export const Registr: React.FC = () => {
             marginTop: '15px',
             marginLeft: '15px',
             fontWeight: 'bold',
-            marginBottom: '50px',
+            marginBottom: '15px',
           }}
         >
           SmartClient
@@ -27,7 +27,7 @@ export const Registr: React.FC = () => {
           sx={{
             backgroundColor: 'transparent',
             color: '#fff',
-            width: '450px !important',
+            width: '410px !important',
             margin: '0 20px',
           }}
         >
@@ -114,9 +114,10 @@ export const Registr: React.FC = () => {
               className='btnModal'
               sx={{
                 color: '#222',
-                marginTop: '15px',
+                marginTop: '20px',
                 textTransform: 'capitalize',
                 fontWeight: 'bold',
+                borderRadius: 2,
               }}
               size='large'
             >
