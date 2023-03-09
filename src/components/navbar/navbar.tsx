@@ -41,8 +41,8 @@ export const Navbar: React.FC<Inavbar> = ({ children }) => {
     setAnchorEl(null);
   };
   return (
-    <div className='flex justify-between items-center w-[100%] py-3'>
-      <p>{children}</p>
+    <div className='flex justify-between items-center w-[100%] py-4 '>
+      <p className='text-[1rem] font-medium'>{children}</p>
       <div className='flex items-center'>
         <Tooltip title='Уведомления'>
           <IconButton onClick={handleClickOpen} sx={{ color: '#fff' }}>

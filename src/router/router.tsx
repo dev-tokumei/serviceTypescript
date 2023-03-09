@@ -3,6 +3,7 @@ import Cashback from '../components/cashback/cashbox';
 import Inventory from '../components/inventory/inventory';
 import Market from '../components/market/market';
 import Order from '../components/order/order';
+import Report from '../components/report/report';
 import Todo from '../components/Tasks/todo';
 import Users from '../components/users/users';
 import { Auth } from '../pages/auth/auth';
@@ -45,5 +46,9 @@ export const router = createBrowserRouter([
   {
     path: '/market',
     element: <Market />,
+  },
+  {
+    path: '/report',
+    element: <Report />,
   },
 ]);
