@@ -14,7 +14,6 @@ import {
 } from '@mui/material';
 import { Layout } from '../../layout/layout';
 import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
-import ViewColumnOutlinedIcon from '@mui/icons-material/ViewColumnOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import './inventory.css';
@@ -43,7 +42,7 @@ const Inventory = () => {
         <Box sx={{ width: '250px' }}>
           <Typography>Все категория</Typography>
         </Box>
-        <Box sx={{ width: '100%' }}>
+        <Box sx={{ width: '100%', p: 1 }}>
           <Box
             sx={{
               width: '100%',
