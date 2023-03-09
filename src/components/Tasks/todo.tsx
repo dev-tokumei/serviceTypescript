@@ -7,6 +7,7 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import SearchIcon from '@mui/icons-material/Search';
 import './todo.css';
+import { Navbar } from '../navbar/navbar';
 
 const Todo: React.FC = () => {
   const [value, setValue] = useState('1');
@@ -16,6 +17,7 @@ const Todo: React.FC = () => {
   };
   return (
     <Layout>
+      <Navbar>Задачи</Navbar>
       <TabContext value={value}>
         <Box
           sx={{

@@ -15,6 +15,7 @@ import { Layout } from '../../layout/layout';
 import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import './cashbox.css';
+import { Navbar } from '../navbar/navbar';
 
 const Cashback = () => {
   const [onOpen, setOnOpen] = useState(false);
@@ -30,6 +31,7 @@ const Cashback = () => {
   };
   return (
     <Layout>
+      <Navbar>Платежи</Navbar>
       <Box
         sx={{
           display: 'flex',

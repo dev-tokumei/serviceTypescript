@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Cashback from '../components/cashback/cashbox';
 import Inventory from '../components/inventory/inventory';
+import Market from '../components/market/market';
 import Order from '../components/order/order';
 import Todo from '../components/Tasks/todo';
 import Users from '../components/users/users';
@@ -40,5 +41,9 @@ export const router = createBrowserRouter([
   {
     path: '/inventory',
     element: <Inventory />,
+  },
+  {
+    path: '/market',
+    element: <Market />,
   },
 ]);

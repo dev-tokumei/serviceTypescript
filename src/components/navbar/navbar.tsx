@@ -42,7 +42,6 @@ export const Navbar: React.FC<Inavbar> = ({ children }) => {
   };
   return (
     <div className='flex justify-between items-center w-[100%] py-3'>
-      <h1>Navbar</h1>
       <p>{children}</p>
       <div className='flex items-center'>
         <Tooltip title='Уведомления'>

@@ -16,6 +16,7 @@ import { Layout } from '../../layout/layout';
 import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import SearchIcon from '@mui/icons-material/Search';
+import { Navbar } from '../navbar/navbar';
 
 const Users = () => {
   const [onOpen, setOnOpen] = useState(false);
@@ -31,6 +32,7 @@ const Users = () => {
   };
   return (
     <Layout>
+      <Navbar>Клиенты</Navbar>
       <Box
         sx={{
           display: 'flex',

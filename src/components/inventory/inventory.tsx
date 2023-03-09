@@ -17,6 +17,7 @@ import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import './inventory.css';
+import { Navbar } from '../navbar/navbar';
 
 const Inventory = () => {
   const [onOpen, setOnOpen] = useState(false);
@@ -31,6 +32,7 @@ const Inventory = () => {
   };
   return (
     <Layout>
+      <Navbar>Склад</Navbar>
       <Box
         sx={{
           width: '100%',

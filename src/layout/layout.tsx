@@ -14,7 +14,6 @@ import WhatshotOutlinedIcon from '@mui/icons-material/WhatshotOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import './layou.css';
-import { Navbar } from '../components/navbar/navbar';
 
 interface ILayout {
   children: React.ReactNode;
@@ -31,10 +30,7 @@ export const Layout: React.FC<ILayout> = ({ children }) => {
       <div className='sideBar'>
         <Sidebar />
       </div>
-      <main>
-        <Navbar />
-        {children}
-      </main>
+      <main>{children}</main>
       <div className='bottomnavigation'>
         <BottomNavigation
           sx={{

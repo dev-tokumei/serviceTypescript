@@ -26,6 +26,7 @@ import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
 import ViewColumnOutlinedIcon from '@mui/icons-material/ViewColumnOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import './order.css';
+import { Navbar } from '../navbar/navbar';
 const Order: React.FC = () => {
   const [value, setValue] = useState('1');
   const [onOpen, setOnOpen] = useState(false);
@@ -54,6 +55,7 @@ const Order: React.FC = () => {
   };
   return (
     <Layout>
+      <Navbar>Закази</Navbar>
       <TabContext value={value}>
         <Box
           sx={{
