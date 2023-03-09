@@ -5,6 +5,7 @@ import Market from '../components/market/market';
 import Order from '../components/order/order';
 import Report from '../components/report/report';
 import Todo from '../components/Tasks/todo';
+import Tender from '../components/tender/tender';
 import Users from '../components/users/users';
 import { Auth } from '../pages/auth/auth';
 import { Registr } from '../pages/auth/registr/registr';
@@ -50,5 +51,9 @@ export const router = createBrowserRouter([
   {
     path: '/report',
     element: <Report />,
+  },
+  {
+    path: '/tender',
+    element: <Tender />,
   },
 ]);

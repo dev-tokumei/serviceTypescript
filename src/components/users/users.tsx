@@ -32,7 +32,7 @@ const Users = () => {
   };
   return (
     <Layout>
-      <Navbar>Клиенты</Navbar>
+      <Navbar>=Клиенты</Navbar>
       <Box
         sx={{
           display: 'flex',
