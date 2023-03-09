@@ -4,6 +4,7 @@ import Inventory from '../components/inventory/inventory';
 import Market from '../components/market/market';
 import Order from '../components/order/order';
 import Report from '../components/report/report';
+import Setting from '../components/setting/setting';
 import Todo from '../components/Tasks/todo';
 import Tender from '../components/tender/tender';
 import Users from '../components/users/users';
@@ -55,5 +56,9 @@ export const router = createBrowserRouter([
   {
     path: '/tender',
     element: <Tender />,
+  },
+  {
+    path: '/setting',
+    element: <Setting />,
   },
 ]);
